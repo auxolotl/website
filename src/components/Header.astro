@@ -1,0 +1,80 @@
+---
+interface Props {}
+---
+
+<header>
+	<div class="left">
+		<a href="https://aux.computer" class="brand">
+			<img class="icon" src="/aux.svg" />
+			<span class="title">aux.computer</span>
+		</a>
+	</div>
+	<div class="right">
+		<!-- TODO: Enable these once the pages are ready. -->
+		<!--
+		<nav>
+			<ul>
+				<li><a href="https://aux.computer/documentation">Documentation</a></li>
+				<li><a href="https://aux.computer/contribute">Contribute</a></li>
+				<li><a href="https://aux.computer/community">Community</a></li>
+			</ul>
+		</nav>
+		-->
+	</div>
+</header>
+
+<style>
+	header {
+		position: sticky;
+		display: flex;
+		justify-content: space-between;
+		top: 0;
+		background: rgb(var(--background));
+		padding: 0.5rem 0;
+	}
+
+	.left {
+		display: flex;
+		align-items: center;
+		padding-left: 0.5rem;
+	}
+
+	.left .brand {
+		display: flex;
+		align-items: center;
+		font-size: 1.5rem;
+	}
+
+	.left .brand .title {
+		padding-left: 0.5rem;
+	}
+
+	.icon {
+		width: 48px;
+		height: 48px;
+	}
+
+	.right {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		padding-right: 1rem;
+	}
+
+	.right nav {
+		display: flex;
+		align-items: center;
+	}
+
+	.right nav ul {
+		display: flex;
+		list-style: none;
+	}
+
+	.right nav ul li {
+	}
+
+	.right nav ul li:not(:last-child) {
+		margin-right: 1rem;
+	}
+</style>
