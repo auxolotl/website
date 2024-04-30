@@ -4,101 +4,103 @@
 
 <section id="roadmap">
 	<h2 class="title">Roadmap</h2>
-	<ol>
-		<li class="phase">
-			<h3 class="name">Soft Fork</h3>
-			<p class="description">
-				This initial phase will involve an ad-hoc management structure due to
-				its bootstrapping nature. As such, the project's stated Values, Goals,
-				and Roadmap serve to keep all contributors aligned and safe knowing that
-				the work they have committed to will not change.
-			</p>
-			<p class="description">
-				The initial forking off of Nix and NixPkgs will be performed in this
-				phase and new contributors will be given roles for handling package
-				maintenance and pulling changes from upstream. We intend to move on from
-				this phase once enough contributors have joined for the project to be
-				capable of transitioning into a hard fork.
-			</p>
-		</li>
-		<li class="phase">
-			<h3 class="name">Hard Fork</h3>
-			<p class="description">
-				Like the Soft Fork phase, management structure will still be ad-hoc, but
-				Committees, Special Interest Groups, and Working Groups may start to be
-				formed. Due to there being necessary bootstrapping steps for each,
-				elections will only begin once the Alignment phase has been reached.
-			</p>
-			<p class="description">
-				At this point we will have enough contributors to safely maintain
-				NixPkgs (or a reasonable subset) and Nix ourselves. We will begin
-				allowing divergence from the upstream repository and changes to the
-				repository structure to improve development can be introduced.
-			</p>
-			<p class="description">
-				An initial release of the packages repository will be created and
-				migration from `nix` to `aux` naming will begin to reduce confusion and
-				errors now that the two projects have diverged.
-			</p>
-		</li>
-		<li class="phase">
-			<h3 class="name">Organization</h3>
-			<p class="description">
-				The packages repository will have sets extracted to allow for Special
-				Interest Groups to more easily manage their lifecycles. For example,
-				`pythonPackages` will be moved to a separate repository that will be the
-				reponsibility of a Python SIG if there is interest.
-			</p>
-			<p class="description">
-				Flakes will be standardized with its current implementation as a v0.
-				While not ideal, the feature is used far too widely to be changed or
-				removed without breaking the ecosystem. Instead, this v0 implementation
-				will be enabled and future work for Flakes that addresses its
-				shortcomings may be handled by a Flakes SIG.
-			</p>
-			<p class="description">
-				The `aux` CLI will be modified to provide more ergonomic management of
-				packages and systems. Additional subcommands such as `aux system switch`
-				and `aux system build` will be added to make onboarding and ongoing
-				maintenance easier.
-			</p>
-		</li>
-		<li class="phase">
-			<h3 class="name">Infrastructure</h3>
-			<p class="description">
-				Now that the project has significantly diverged from upstream, we will
-				need to provide our own Continuous Integration and Binary Cache
-				services. Existing governance structures will be used to manage the
-				adoption of these technologies.
-			</p>
-			<p class="description">
-				Documentation will be included as a part of the Continuous Integration
-				process and will have Continuous Deployment configured to keep it up to
-				date, making it easier for contributors to create educational materials.
-			</p>
-			<p class="description">
-				Search infrastructure for packages and options will also be created.
-			</p>
-		</li>
-		<li class="phase">
-			<h3 class="name">Alignment</h3>
-			<p class="description">
-				By this point, we've done it. We have created a sustainable, independent
-				fork of the Nix ecosystem. Now that the initial work has been completed
-				we will begin the governance rotation process with our first elections
-				and education as to how project governance works.
-			</p>
-			<p class="description">
-				Documentation, project branding, and packages will be polished and
-				presented as a fully stable release. From this point forward the
-				Steering Committee will be managing the creation of Special Interest
-				Groups and other necessary Committees. All enhancements will be
-				suggested in Aux Enhancement Proposals which encourage existing SIGs to
-				implement features or encourage the formation of a new SIG to be created
-				for such a purpose.
-			</p>
-		</li>
-	</ol>
+	<div class="phases">
+		<ol>
+			<li class="phase">
+				<h3 class="name">Soft Fork</h3>
+				<p class="description">
+					This initial phase will involve an ad-hoc management structure due to
+					its bootstrapping nature. As such, the project's stated Values, Goals,
+					and Roadmap serve to keep all contributors aligned and safe knowing that
+					the work they have committed to will not change.
+				</p>
+				<p class="description">
+					The initial forking off of Nix and NixPkgs will be performed in this
+					phase and new contributors will be given roles for handling package
+					maintenance and pulling changes from upstream. We intend to move on from
+					this phase once enough contributors have joined for the project to be
+					capable of transitioning into a hard fork.
+				</p>
+			</li>
+			<li class="phase">
+				<h3 class="name">Hard Fork</h3>
+				<p class="description">
+					Like the Soft Fork phase, management structure will still be ad-hoc, but
+					Committees, Special Interest Groups, and Working Groups may start to be
+					formed. Due to there being necessary bootstrapping steps for each,
+					elections will only begin once the Alignment phase has been reached.
+				</p>
+				<p class="description">
+					At this point we will have enough contributors to safely maintain
+					NixPkgs (or a reasonable subset) and Nix ourselves. We will begin
+					allowing divergence from the upstream repository and changes to the
+					repository structure to improve development can be introduced.
+				</p>
+				<p class="description">
+					An initial release of the packages repository will be created and
+					migration from `nix` to `aux` naming will begin to reduce confusion and
+					errors now that the two projects have diverged.
+				</p>
+			</li>
+			<li class="phase">
+				<h3 class="name">Organization</h3>
+				<p class="description">
+					The packages repository will have sets extracted to allow for Special
+					Interest Groups to more easily manage their lifecycles. For example,
+					`pythonPackages` will be moved to a separate repository that will be the
+					reponsibility of a Python SIG if there is interest.
+				</p>
+				<p class="description">
+					Flakes will be standardized with its current implementation as a v0.
+					While not ideal, the feature is used far too widely to be changed or
+					removed without breaking the ecosystem. Instead, this v0 implementation
+					will be enabled and future work for Flakes that addresses its
+					shortcomings may be handled by a Flakes SIG.
+				</p>
+				<p class="description">
+					The `aux` CLI will be modified to provide more ergonomic management of
+					packages and systems. Additional subcommands such as `aux system switch`
+					and `aux system build` will be added to make onboarding and ongoing
+					maintenance easier.
+				</p>
+			</li>
+			<li class="phase">
+				<h3 class="name">Infrastructure</h3>
+				<p class="description">
+					Now that the project has significantly diverged from upstream, we will
+					need to provide our own Continuous Integration and Binary Cache
+					services. Existing governance structures will be used to manage the
+					adoption of these technologies.
+				</p>
+				<p class="description">
+					Documentation will be included as a part of the Continuous Integration
+					process and will have Continuous Deployment configured to keep it up to
+					date, making it easier for contributors to create educational materials.
+				</p>
+				<p class="description">
+					Search infrastructure for packages and options will also be created.
+				</p>
+			</li>
+			<li class="phase">
+				<h3 class="name">Alignment</h3>
+				<p class="description">
+					By this point, we've done it. We have created a sustainable, independent
+					fork of the Nix ecosystem. Now that the initial work has been completed
+					we will begin the governance rotation process with our first elections
+					and education as to how project governance works.
+				</p>
+				<p class="description">
+					Documentation, project branding, and packages will be polished and
+					presented as a fully stable release. From this point forward the
+					Steering Committee will be managing the creation of Special Interest
+					Groups and other necessary Committees. All enhancements will be
+					suggested in Aux Enhancement Proposals which encourage existing SIGs to
+					implement features or encourage the formation of a new SIG to be created
+					for such a purpose.
+				</p>
+			</li>
+		</ol>
+	</div>
 </section>
 
 <style>
@@ -106,6 +108,9 @@
 		max-width: 800px;
 		margin: 0 auto;
 		padding: 4rem 1rem;
+	}
+
+	.phases {
 		padding-left: 2.5rem;
 	}
 
