@@ -2,30 +2,30 @@
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
+const translation = useTranslations(lang);
 ---
 
 <section id="values">
-	<h2>{t("values.title")}</h2>
-	<h3 class="name">{t("values.rep.title")}</h3>
+	<h2>{translation("values.title")}</h2>
+	<h3 class="name">{translation("values.rep.title")}</h3>
 	<p class="description">
-		{t("values.rep")}
+		{translation("values.rep")}
 	</p>
-	<h3 class="name">{t("values.kindness.title")}</h3>
+	<h3 class="name">{translation("values.kindness.title")}</h3>
 	<p class="description">
-		{t("values.kindness")}
+		{translation("values.kindness")}
 	</p>
-	<h3 class="name">{t("values.collaboration.title")}</h3>
+	<h3 class="name">{translation("values.collaboration.title")}</h3>
 	<p class="description">
-		{t("values.collaboration")}
+		{translation("values.collaboration")}
 	</p>
-	<h3 class="name">{t("values.sustainability.title")}</h3>
+	<h3 class="name">{translation("values.sustainability.title")}</h3>
 	<p class="description">
-		{t("values.sustainability")}
+		{translation("values.sustainability")}
 	</p>
-	<h3 class="name">{t("values.accessibility.title")}</h3>
+	<h3 class="name">{translation("values.accessibility.title")}</h3>
 	<p class="description">
-		{t("values.accessibility")}
+		{translation("values.accessibility")}
 	</p>
 </section>
 

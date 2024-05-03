@@ -2,64 +2,64 @@
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
+const translation = useTranslations(lang);
 ---
 
 <section id="roadmap">
-	<h2>{t("roadmap.title")}</h2>
+	<h2>{translation("roadmap.title")}</h2>
 
 	<ol>
 		<li>
-			<h3>{t("roadmap.soft_fork.title")}</h3>
+			<h3>{translation("roadmap.soft_fork.title")}</h3>
 			<p>
-				{t("roadmap.soft_fork.1")}
+				{translation("roadmap.soft_fork.1")}
 			<p>
-				{t("roadmap.soft_fork.2")}
+				{translation("roadmap.soft_fork.2")}
 			</p>
 		</li>
 		<li>
-			<h3>{t("roadmap.hard_fork.title")}</h3>
+			<h3>{translation("roadmap.hard_fork.title")}</h3>
 			<p>
-				{t("roadmap.hard_fork.1")}
+				{translation("roadmap.hard_fork.1")}
 			</p>
 			<p>
-				{t("roadmap.hard_fork.2")}
+				{translation("roadmap.hard_fork.2")}
 			</p>
 			<p>
-				{t("roadmap.hard_fork.3")}
-			</p>
-		</li>
-		<li>
-			<h3>{t("roadmap.organization.title")}</h3>
-			<p>
-				{t("roadmap.organization.1")}
-			</p>
-			<p>
-				{t("roadmap.organization.2")}
-			</p>
-			<p>
-				{t("roadmap.organization.3")}
+				{translation("roadmap.hard_fork.3")}
 			</p>
 		</li>
 		<li>
-			<h3>{t("roadmap.infa.title")}</h3>
+			<h3>{translation("roadmap.organization.title")}</h3>
 			<p>
-				{t("roadmap.infa.1")}
+				{translation("roadmap.organization.1")}
 			</p>
 			<p>
-				{t("roadmap.infa.2")}
+				{translation("roadmap.organization.2")}
 			</p>
 			<p>
-				{t("roadmap.infa.3")}
+				{translation("roadmap.organization.3")}
 			</p>
 		</li>
 		<li>
-			<h3>{t("roadmap.alignment.title")}</h3>
+			<h3>{translation("roadmap.infa.title")}</h3>
 			<p>
-				{t("roadmap.alignment.1")}
+				{translation("roadmap.infa.1")}
 			</p>
 			<p>
-				{t("roadmap.alignment.2")}
+				{translation("roadmap.infa.2")}
+			</p>
+			<p>
+				{translation("roadmap.infa.3")}
+			</p>
+		</li>
+		<li>
+			<h3>{translation("roadmap.alignment.title")}</h3>
+			<p>
+				{translation("roadmap.alignment.1")}
+			</p>
+			<p>
+				{translation("roadmap.alignment.2")}
 			</p>
 		</li>
 	</ol>

@@ -2,7 +2,7 @@
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
+const translation = useTranslations(lang);
 ---
 
 <div class="hero">
@@ -10,8 +10,8 @@ const t = useTranslations(lang);
 		<div class="icon">
 			<img src="/aux.svg" alt="" />
 		</div>
-		<h1 class="title">{t("root.title")}</h1>
-		<div class="description">{t("root.description")}</div>
+		<h1 class="title">{translation("root.title")}</h1>
+		<div class="description">{translation("root.description")}</div>
 	</div>
 </div>
 

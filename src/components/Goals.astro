@@ -2,41 +2,41 @@
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
+const translation = useTranslations(lang);
 ---
 
 <section id="goals">
-	<h2 class="title">Goals</h2>
+	<h2>{translation("goals.title")}</h2>
 	<div>
 		<ol>
 			<li>
-				<h3>{t("goals.independent.title")}</h3>
+				<h3>{translation("goals.independent.title")}</h3>
 				<p>
-					{t("goals.independent")}
+					{translation("goals.independent")}
 				</p>
 			</li>
 			<li>
-				<h3>{t("goals.gov.title")}</h3>
+				<h3>{translation("goals.gov.title")}</h3>
 				<p>
-					{t("goals.gov")}
+					{translation("goals.gov")}
 				</p>
 			</li>
 			<li>
-				<h3>{t("goals.stabilization.title")}</h3>
+				<h3>{translation("goals.stabilization.title")}</h3>
 				<p>
-					{t("goals.stabilization")}
+					{translation("goals.stabilization")}
 				</p>
 			</li>
 			<li>
-				<h3>{t("goals.infa.title")}</h3>
+				<h3>{translation("goals.infa.title")}</h3>
 				<p>
-					{t("goals.infa")}
+					{translation("goals.infa")}
 				</p>
 			</li>
 			<li>
-				<h3>{t("goals.education.title")}</h3>
+				<h3>{translation("goals.education.title")}</h3>
 				<p>
-					{t("goals.education")}
+					{translation("goals.education")}
 				</p>
 			</li>
 		</ol>

@@ -4,14 +4,14 @@ interface Props {}
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
+const translation = useTranslations(lang);
 ---
 
 <header>
 	<div class="left">
 		<a href="https://aux.computer" class="brand">
 			<img class="icon" src="/aux.svg" />
-			<span class="title">{t("root.title")}</span>
+			<span class="title">{translation("root.title")}</span>
 		</a>
 	</div>
 	<div class="right">
@@ -21,8 +21,8 @@ const t = useTranslations(lang);
 				<li><a href="https://aux.computer/documentation">Documentation</a></li>
 				<li><a href="https://aux.computer/contribute">Contribute</a></li>
 			-->
-				<li><a href="https://forum.aux.computer">{t("header.community")}</a></li>
-				<li><a href="https://github.com/auxolotl">{t("header.github")}</a></li>
+				<li><a href="https://forum.aux.computer">{translation("header.community")}</a></li>
+				<li><a href="https://github.com/auxolotl">{translation("header.github")}</a></li>
 			</ul>
 		</nav>
 	</div>
