@@ -12,7 +12,7 @@ in
 
     src = lib.snowfall.fs.get-file "/";
 
-    npmDepsHash = "sha256-qvpwlPY0dFZX0VAnEdNsJxK5W8MU1twzaShUPyqbpF4=";
+    npmDepsHash = "sha256-ze98HddbmkSAgDxJIw1l2YH3EcJ8NKx6Gz++xbcxBM4=";
 
     npmFlags = ["--ignore-scripts"];
 

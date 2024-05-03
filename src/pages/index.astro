@@ -10,10 +10,15 @@ import Roadmap from "../components/Roadmap.astro";
 <Layout title="aux.computer">
 	<main>
 		<Header />
-		<Hero />
-		<Values />
-		<Goals />
-		<Roadmap />
+
+		<div class="grid place-items-center">
+			<Hero />
+			<div class="prose prose-invert py-16 px-4 max-w-3xl">
+				<Values />
+				<Goals />
+				<Roadmap />
+			</div>
+		</div>
 	</main>
 </Layout>
 
