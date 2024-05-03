@@ -2,8 +2,7 @@
   description = "aux website";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
-    unstable.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:auxolotl/nixpkgs/nixos-unstable";
 
     snowfall-lib = {
       url = "github:snowfallorg/lib";
@@ -21,7 +20,7 @@
 
       snowfall = {
         root = ./nix;
-        namespace = "aux";
+        namespace = "auxolotl";
       };
     };
 }
