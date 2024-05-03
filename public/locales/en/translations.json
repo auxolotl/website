@@ -1,9 +1,7 @@
 {
-	"root.title": "aux.computer",
 	"root.description": "An alternative to the Nix ecosystem",
 
 	"header.community": "Community",
-	"header.Github": "Github",
 
 	"goals.title": "Goals",
 	"goals.independent.title": "Independent",
