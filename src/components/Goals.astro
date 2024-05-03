@@ -1,5 +1,8 @@
 ---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
 
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <section id="goals">
@@ -7,47 +10,33 @@
 	<div>
 		<ol>
 			<li>
-				<h3>Independent</h3>
+				<h3>{t("goals.independent.title")}</h3>
 				<p>
-					We will fork and maintain Nix, NixPkgs, and NixOS. Additional support
-					for projects such as Nix Darwin and Home Manager will be considered.
+					{t("goals.independent")}
 				</p>
 			</li>
 			<li>
-				<h3>Governance</h3>
+				<h3>{t("goals.gov.title")}</h3>
 				<p>
-					A democratic model of governance with elected positions will be used to
-					manage the project. A steering committee will provide direction with
-					additional committees handling specific logistical tasks. Features or
-					individual projects will be owned by Special Interest Groups. SIGs will
-					collaborate within Working Groups to achieve their goals. Each committee
-					and group will have its goals, requirements, and management process
-					clearly defined.
+					{t("goals.gov")}
 				</p>
 			</li>
 			<li>
-				<h3>Stabilization</h3>
+				<h3>{t("goals.stabilization.title")}</h3>
 				<p>
-					User-friendly features such as the Nix v3 CLI will be enabled by
-					default. Nix Flakes are used too heavily to remove or change and will
-					instead be stabilized as a v0 in its current state with any future work
-					being handled by a Special Interest Group.
+					{t("goals.stabilization")}
 				</p>
 			</li>
 			<li>
-				<h3>Infrastructure</h3>
+				<h3>{t("goals.infa.title")}</h3>
 				<p>
-					We will build and maintain the tools and infrastructure necessary to
-					keep the ecosystem healthy, including Continuous Integration and Binary
-					Caching.
+					{t("goals.infa")}
 				</p>
 			</li>
 			<li>
-				<h3>Education</h3>
+				<h3>{t("goals.education.title")}</h3>
 				<p>
-					Unified documentation, tutorials, guides, and examples will provide a
-					better onboarding experience for newcomers and a faster iteration cycle
-					for experts.
+					{t("goals.education")}
 				</p>
 			</li>
 		</ol>
