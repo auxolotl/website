@@ -1,5 +1,7 @@
 ---
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { Image } from 'astro:assets';
+import aux from '../../public/aux.svg';
 
 const lang = getLangFromUrl(Astro.url);
 const translation = useTranslations(lang);
@@ -8,7 +10,7 @@ const translation = useTranslations(lang);
 <div class="hero">
 	<div class="content">
 		<div class="icon">
-			<img src="/aux.svg" alt="" />
+			<Image src={aux} alt="aux.computer logo" />
 		</div>
 		<h1 class="title">aux.computer</h1>
 		<div class="description">{translation("root.description")}</div>
