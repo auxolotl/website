@@ -1,102 +1,65 @@
 ---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
 
+const lang = getLangFromUrl(Astro.url);
+const translation = useTranslations(lang);
 ---
 
 <section id="roadmap">
-	<h2>Roadmap</h2>
+	<h2>{translation("roadmap.title")}</h2>
 
 	<ol>
 		<li>
-			<h3>Soft Fork</h3>
+			<h3>{translation("roadmap.soft_fork.title")}</h3>
 			<p>
-				This initial phase will involve an ad-hoc management structure due to
-				its bootstrapping nature. As such, the project's stated Values, Goals,
-				and Roadmap serve to keep all contributors aligned and safe knowing that
-				the work they have committed to will not change.
-			</p>
+				{translation("roadmap.soft_fork.1")}
 			<p>
-				The initial forking off of Nix and NixPkgs will be performed in this
-				phase and new contributors will be given roles for handling package
-				maintenance and pulling changes from upstream. We intend to move on from
-				this phase once enough contributors have joined for the project to be
-				capable of transitioning into a hard fork.
+				{translation("roadmap.soft_fork.2")}
 			</p>
 		</li>
 		<li>
-			<h3>Hard Fork</h3>
+			<h3>{translation("roadmap.hard_fork.title")}</h3>
 			<p>
-				Like the Soft Fork phase, management structure will still be ad-hoc, but
-				Committees, Special Interest Groups, and Working Groups may start to be
-				formed. Due to there being necessary bootstrapping steps for each,
-				elections will only begin once the Alignment phase has been reached.
+				{translation("roadmap.hard_fork.1")}
 			</p>
 			<p>
-				At this point we will have enough contributors to safely maintain
-				NixPkgs (or a reasonable subset) and Nix ourselves. We will begin
-				allowing divergence from the upstream repository and changes to the
-				repository structure to improve development can be introduced.
+				{translation("roadmap.hard_fork.2")}
 			</p>
 			<p>
-				An initial release of the packages repository will be created and
-				migration from `nix` to `aux` naming will begin to reduce confusion and
-				errors now that the two projects have diverged.
+				{translation("roadmap.hard_fork.3")}
 			</p>
 		</li>
 		<li>
-			<h3>Organization</h3>
+			<h3>{translation("roadmap.organization.title")}</h3>
 			<p>
-				The packages repository will have sets extracted to allow for Special
-				Interest Groups to more easily manage their lifecycles. For example,
-				`pythonPackages` will be moved to a separate repository that will be the
-				reponsibility of a Python SIG if there is interest.
+				{translation("roadmap.organization.1")}
 			</p>
 			<p>
-				Flakes will be standardized with its current implementation as a v0.
-				While not ideal, the feature is used far too widely to be changed or
-				removed without breaking the ecosystem. Instead, this v0 implementation
-				will be enabled and future work for Flakes that addresses its
-				shortcomings may be handled by a Flakes SIG.
+				{translation("roadmap.organization.2")}
 			</p>
 			<p>
-				The `aux` CLI will be modified to provide more ergonomic management of
-				packages and systems. Additional subcommands such as `aux system switch`
-				and `aux system build` will be added to make onboarding and ongoing
-				maintenance easier.
+				{translation("roadmap.organization.3")}
 			</p>
 		</li>
 		<li>
-			<h3>Infrastructure</h3>
+			<h3>{translation("roadmap.infra.title")}</h3>
 			<p>
-				Now that the project has significantly diverged from upstream, we will
-				need to provide our own Continuous Integration and Binary Cache
-				services. Existing governance structures will be used to manage the
-				adoption of these technologies.
+				{translation("roadmap.infra.1")}
 			</p>
 			<p>
-				Documentation will be included as a part of the Continuous Integration
-				process and will have Continuous Deployment configured to keep it up to
-				date, making it easier for contributors to create educational materials.
+				{translation("roadmap.infra.2")}
 			</p>
 			<p>
-				Search infrastructure for packages and options will also be created.
+				{translation("roadmap.infra.3")}
 			</p>
 		</li>
 		<li>
-			<h3>Alignment</h3>
+			<h3>{translation("roadmap.alignment.title")}</h3>
 			<p>
-				By this point, we've done it. We have created a sustainable, independent
-				fork of the Nix ecosystem. Now that the initial work has been completed
-				we will begin the governance rotation process with our first elections
-				and education as to how project governance works.
+				{translation("roadmap.alignment.1")}
 			</p>
 			<p>
-				Documentation, project branding, and packages will be polished and
-				presented as a fully stable release. From this point forward the
-				Steering Committee will be managing the creation of Special Interest
-				Groups and other necessary Committees. All enhancements will be
-				suggested in Aux Enhancement Proposals which encourage existing SIGs to
-				implement features or encourage the formation of a new SIG to be created
-				for such a purpose.
+				{translation("roadmap.alignment.2")}
 			</p>
 		</li>
 	</ol>

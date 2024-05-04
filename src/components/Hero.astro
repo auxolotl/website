@@ -1,5 +1,8 @@
 ---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
 
+const lang = getLangFromUrl(Astro.url);
+const translation = useTranslations(lang);
 ---
 
 <div class="hero">
@@ -8,7 +11,7 @@
 			<img src="/aux.svg" alt="" />
 		</div>
 		<h1 class="title">aux.computer</h1>
-		<div class="description">An alternative to the Nix ecosystem</div>
+		<div class="description">{translation("root.description")}</div>
 	</div>
 </div>
 

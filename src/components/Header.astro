@@ -1,5 +1,10 @@
 ---
 interface Props {}
+
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const translation = useTranslations(lang);
 ---
 
 <header>
@@ -16,7 +21,7 @@ interface Props {}
 				<li><a href="https://aux.computer/documentation">Documentation</a></li>
 				<li><a href="https://aux.computer/contribute">Contribute</a></li>
 			-->
-				<li><a href="https://forum.aux.computer">Community</a></li>
+				<li><a href="https://forum.aux.computer">{translation("header.community")}</a></li>
 				<li><a href="https://github.com/auxolotl">Github</a></li>
 			</ul>
 		</nav>
