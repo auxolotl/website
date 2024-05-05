@@ -7,7 +7,7 @@
 	"goals.independent.title": "Independiente",
 	"goals.independent": "Mantendremos una bifurcación ("fork") de Nix, NixPkgs y NixOS. Se considerará soporte adicional para proyectos como Nix Darwin y Home Manager.",
 	"goals.gov.title": "Gobierno",
-	"goals.gov": "El proyecto se gestionará siguiendo un modelo con posiciones electas. Un comité de dirección poveerá un rumbo conjuntamente con otros comités dedicados al manejo de tareas logísticas específicas.  Características o proyectos individuales quedarán a cargo de Grupos de Interés Especial GIEs (SIG por sus siglas en Inglés). Los GIEs colaborarán en Grupos de Trabajo para cumplir sus objetivos. Cada comité y grupo tendrá sus propios objetivos, requisitos y procesos de gestión claramente definidos.",
+	"goals.gov": "El proyecto se gestionará siguiendo un modelo democrático con posiciones electas. Un comité de dirección poveerá un rumbo conjuntamente con otros comités dedicados al manejo de tareas logísticas específicas.  Características o proyectos individuales quedarán a cargo de Grupos de Interés Especial GIEs (SIG por sus siglas en Inglés). Los GIEs colaborarán en Grupos de Trabajo para cumplir sus objetivos. Cada comité y grupo tendrá sus propios objetivos, requisitos y procesos de gestión claramente definidos.",
 	"goals.stabilization.title": "Estabilización",
 	"goals.stabilization": "Funciones para facilitar la experiencia de usuario como la interfaz de comandos v3 de Nix estarán habilitados por defecto. Los Nix Flakes se usan demasiado como para eliminarlos o cambiarlos y en su lugar serán estabilizados como una v0 en sy estado actual con cualquier futuro trabajo gestionado por un Grupo de Interés Especial.",
 	"goals.infra.title": "Infraestructura",
