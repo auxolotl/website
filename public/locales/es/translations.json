@@ -17,7 +17,7 @@
 
 	"roadmap.title": "Hoja de ruta",
 	"roadmap.soft_fork.title": "Separación Blanda",
-	"roadmap.soft_fork.1": "Esta fase inicial contará con una estructura de dirección ad hoc debido a las circustancias de arranque. Los Valores, Objectivos y Hoja de Ruta serivrán para mantener a todos los contribuidores alineado y seguros de que su trabajo no cambiará.",
+	"roadmap.soft_fork.1": "Esta fase inicial contará con una estructura de dirección ad hoc debido a las circustancias iniciales. Los Valores, Objetivos y Hoja de Ruta serivirán para orientar a quienes contribuyan y para que tengan la seguridad de que su trabajo no cambiará.",
 	"roadmap.soft_fork.2": "La separación inicial de Nix y NixPkgs se dará en esta fase. Se asignran roles a los nuevos contribuidores por tal de gestionar el mantenimiento y la implementación de cambios de las fuentes. Planeamos avanzar de fase cuando el número suficiente de contribuidores se haya unído al proyecto para sotener la transición a una separación dura.",
 	"roadmap.hard_fork.title": "Separación Dura",
 	"roadmap.hard_fork.1": "Like the Soft Fork phase, management structure will still be ad-hoc, but Committees, Special Interest Groups, and Working Groups may start to be formed. Due to there being necessary bootstrapping steps for each, elections will only begin once the Alignment phase has been reached.",
