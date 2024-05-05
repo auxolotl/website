@@ -1,5 +1,6 @@
 ---
 import { getLangFromUrl } from '../i18n/utils';
+import Header from "../components/Header.astro";
 
 interface Props {
 	title: string;
@@ -22,6 +23,8 @@ const lang = getLangFromUrl(Astro.url);
 		<meta name="verify" content="https://github.com/jakehamilton" />
 	</head>
 	<body>
+		<Header />
+
 		<slot />
 	</body>
 </html>
