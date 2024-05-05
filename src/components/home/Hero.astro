@@ -1,7 +1,7 @@
 ---
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
 import { Image } from 'astro:assets';
-import aux from '../../public/aux.svg';
+import aux from '../../../public/aux.svg';
 
 const lang = getLangFromUrl(Astro.url);
 const translation = useTranslations(lang);
