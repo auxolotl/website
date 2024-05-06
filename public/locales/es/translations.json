@@ -5,7 +5,7 @@
 
 	"goals.title": "Objetivos",
 	"goals.independent.title": "Independiente",
-	"goals.independent": "Mantendremos una bifurcación ("fork") de Nix, NixPkgs y NixOS. Se considerará soporte adicional para proyectos como Nix Darwin y Home Manager.",
+	"goals.independent": "Mantendremos una bifurcación (fork) de Nix, NixPkgs y NixOS. Se considerará soporte adicional para proyectos como Nix Darwin y Home Manager.",
 	"goals.gov.title": "Gobierno",
 	"goals.gov": "El proyecto se gestionará siguiendo un modelo democrático con posiciones electas. Un comité de dirección poveerá un rumbo conjuntamente con otros comités dedicados al manejo de tareas logísticas específicas.  Características o proyectos individuales quedarán a cargo de Grupos de Interés Especial GIEs (SIG por sus siglas en Inglés). Los GIEs colaborarán en Grupos de Trabajo para cumplir sus objetivos. Cada comité y grupo tendrá sus propios objetivos, requisitos y procesos de gestión claramente definidos.",
 	"goals.stabilization.title": "Estabilización",
