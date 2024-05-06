@@ -1,0 +1,15 @@
+---
+import { languages } from "../../i18n/ui";
+import Layout from "../../layouts/Layout.astro";
+import Home from "../../components/home/Home.astro";
+
+export async function getStaticPaths() {
+	return Object.keys(languages).map((name) => (
+		{ params: { lang: name } }
+	))
+}
+---
+
+<Layout title="auxolotl.org">
+	<Home />
+</Layout>

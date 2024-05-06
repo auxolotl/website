@@ -1,11 +1,11 @@
 ---
 interface Props {}
 
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { useTranslations } from '../i18n/utils';
 import { Image } from 'astro:assets';
 import aux from '../../public/aux.svg';
 
-const lang = getLangFromUrl(Astro.url);
+const { lang } = Astro.params;
 const translation = useTranslations(lang);
 ---
 
