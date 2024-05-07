@@ -1,3 +1,4 @@
+import de from "../../public/locales/de/translations.json"
 import en from "../../public/locales/en/translations.json"
 
 export const languages = {
