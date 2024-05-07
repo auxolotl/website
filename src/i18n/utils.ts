@@ -11,6 +11,12 @@ export function useTranslations(lang: keyof typeof ui) {
 	};
 }
 
+export function switchLang(lang: keyof typeof ui) {
+	const parts = location.pathname.split("/");
+	parts[1] = lang;
+	location.href = parts.join("/");
+}
+
 export const getStaticPaths = (async () => {
 	return Object.keys(languages).map((name) => ({
 		params: { lang: name as keyof typeof languages },
