@@ -1,10 +1,10 @@
-import en from "../../public/locales/en/translations.json"
+import en from "../../public/locales/en/translations.json";
 
 export const languages = {
-	en: 'English'
+	en: "English",
 };
 
-export const defaultLang = 'en';
+export const defaultLang = "en";
 
 export const ui = {
 	en,
