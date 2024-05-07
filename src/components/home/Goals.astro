@@ -1,7 +1,8 @@
 ---
 import { useTranslations } from "../../i18n/utils";
+import type { Params } from "../../i18n/utils";
 
-const { lang } = Astro.params;
+const { lang } = Astro.params as Params;
 const translation = useTranslations(lang);
 ---
 

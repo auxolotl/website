@@ -1,12 +1,13 @@
 ---
 import Header from "../components/Header.astro";
+import type { Params } from "../i18n/utils";
 
 interface Props {
 	title: string;
 }
 
 const { title } = Astro.props;
-const { lang } = Astro.params;
+const { lang } = Astro.params as Params;
 ---
 
 <!doctype html>
