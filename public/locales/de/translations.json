@@ -3,11 +3,11 @@
 
 	"header.community": "Gemeinschaft",
 
-	"goals.title": "Die Ziele",
+	"goals.title": "Unsere Ziele",
 	"goals.independent.title": "Unabhängigkeit",
 	"goals.independent": "Wir werden Nix, NixPkgs und NixOS forken und betreuen. Zusätzliche Unterstützung für Projekte wie Nix Darwin und Home Manager wird in Betracht gezogen.",
 	"goals.gov.title": "Gesellschaftliche Organisation",
-	"goals.gov": "Zur Verwaltung des Projekts wird ein demokratisches Modell mit gewählten Positionen eingesetzt. Ein Lenkungsausschuss (steering committee) entscheidet über den Kurs, während weitere Ausschüsse spezifische oder logistische Aufgaben übernehmen. Features oder einzelne Projekte werden von Special Interest Groups umgesetzt. SIGs werden in Arbeitsgruppen (Working Groups) zusammenarbeiten, um ihre Ziele übergreifend zu erreichen. Für jedes Komitee und jede Gruppe sind die Ziele, Anforderungen und Managementprozesse klar definiert.",
+	"goals.gov": "Zur Verwaltung des Projekts wird ein demokratisches Modell mit gewählten Positionen eingesetzt. Ein Lenkungsausschuss (steering committee) entscheidet über den Kurs, während weitere Ausschüsse spezifische oder logistische Aufgaben übernehmen. Features oder einzelne Projekte werden von Special Interest Groups (SIG) umgesetzt. SIGs werden in Arbeitsgruppen (Working Groups) zusammenarbeiten, um ihre Ziele übergreifend zu erreichen. Für jedes Komitee und jede Gruppe sind die Ziele, Anforderungen und Managementprozesse klar definiert.",
 	"goals.stabilization.title": "Stabilisierung",
 	"goals.stabilization": "Benutzerfreundliche Funktionen wie die 'Nix v3 CLI' werden standardmäßig aktiviert. Nix 'Flakes' werden bereits zu häufig verwendet, um sie zu entfernen oder zu ändern, stattdessen werden diese als 'flake v0' in ihrem aktuellen Zustand vereinheitlicht. Zukünftige Arbeiten werden von einer Special Interest Group gesteuert.",
 	"goals.infra.title": "Infrastruktur",
@@ -35,15 +35,15 @@
 	"roadmap.alignment.1": "By this point, we've done it. We have created a sustainable, independent fork of the Nix ecosystem. Now that the initial work has been completed we will begin the governance rotation process with our first elections and education as to how project governance works.",
 	"roadmap.alignment.2": "Documentation, project branding, and packages will be polished and presented as a fully stable release. From this point forward the Steering Committee will be managing the creation of Special Interest Groups and other necessary Committees. All enhancements will be suggested in Aux Enhancement Proposals which encourage existing SIGs to implement features or encourage the formation of a new SIG to be created for such a purpose.",
 
-	"values.title": "Die Werte",
-	"values.rep.title": "Vertretung",
-	"values.rep": "Die Ansichten der Mitwirkenden sollten vertreten werden und die Organisationsstruktur sollte demokratisch ausgerichtet sein.",
+	"values.title": "Unsere Werte",
+	"values.rep.title": "Repräsentation",
+	"values.rep": "Die Ansichten der Mitwirkenden sollten vertreten sein und die Organisationsstruktur soll demokratisch ausgerichtet sein.",
 	"values.kindness.title": "Wohlwollen",
-	"values.kindness": "Das Projekt sollte einladend sein und einen sicherer Ort für die Teilnahme darstellen.",
+	"values.kindness": "Das Projekt soll zum Mitwirken einladen und eine sichere Umgebung für Anteilnahme bieten.",
 	"values.collab.title": "Zusammenarbeit",
 	"values.collab": "Kommunikation und Zusammenarbeit sollten gefördert werden.",
 	"values.sustainability.title": "Nachhaltigkeit",
 	"values.sustainability": "Arbeitsbelastung, Finanzen, Umfang und Burnout sollten sorgfältig abgewogen werden, um sicherzustellen, dass das Projekt stabil ist.",
 	"values.accessibility.title": "Offenheit",
-	"values.accessibility": "Elitäres Verhalten ist unerwünscht, unser Wissen soll geteilt werden und wir sollten die Werkzeuge bereitstellen, die jedem zum Erfolg und Lernen verhelfen."
+	"values.accessibility": "Elitäres Verhalten ist unerwünscht, unser Wissen soll geteilt werden und wir wollen die Werkzeuge bereitstellen, die jedem zum Erfolg und Lernen verhelfen."
 }
