@@ -1,9 +1,10 @@
 ---
-import { useTranslations } from '../../i18n/utils';
-import { Image } from 'astro:assets';
-import aux from '../../../public/aux.svg';
+import { useTranslations } from "../../i18n/utils";
+import { Image } from "astro:assets";
+import aux from "../../../public/aux.svg";
+import type { Params } from "../../i18n/utils";
 
-const { lang } = Astro.params;
+const { lang } = Astro.params as Params;
 const translation = useTranslations(lang);
 ---
 

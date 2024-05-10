@@ -1,0 +1,37 @@
+name: Check
+
+on:
+    pull_request:
+    push:
+        branches:
+            - main
+
+jobs:
+    prettier:
+        name: Check Code Format
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+
+            - name: Install NPM dependencies
+              run: npm ci
+
+            - name: Check Prettier
+              run: npm run prettier:check:ci
+    nix:
+        name: Nix Build
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+
+            - uses: cachix/install-nix-action@v25
+
+            - name: Check Nix Build
+              run: nix build
+
+            - name: Check Nix Flake
+              run: nix flake check
