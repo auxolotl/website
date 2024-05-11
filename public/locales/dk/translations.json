@@ -1,12 +1,11 @@
 {
 	"root.description": "Et alternativ til Nix økosystemet",
-
 	"header.community": "Community",
-
 	"goals.title": "Mål",
 	"goals.independent.title": "Uafhængighed",
 	"goals.independent": "Vi vil vedligeholde en fork af Nix, NixPkgs, og NixOS. Yderligere understøttelse af projekter såsom Nix Darwin og Home Manager overvejes.",
 	"goals.gov.title": "Ledelsesform",
+	"goals.gov.wiki": "Learn about Aux's governance structures.",
 	"goals.gov": "Projektet ledes via demokratiskt valgte stillinger. Overordnet retning gives af en styringsgruppe, med yderligere grupper til at håndtere specifikke opgaveområder. Af disse vil Special Interest Groups have ansvaret for specifikke features og projekter, eksekveret igennem egne Working Groups. Samtlige grupper vil klart udspecificere hver deres mål, krav, og styringsprocess.",
 	"goals.stabilization.title": "Stabilisering",
 	"goals.stabilization": "Brugervenlige features såsom Nix v3 kommandolinjen vil som udgangspunkt være aktive. Nix Flakes er for udbredt en feature til at kunne fjernes eller substantielt ændres, hvorfor den i stedet stabiliseres i sin nuværende form som v0. Yderligere arbejde her håndteres af ansvarshavende Special Interest Group.",
@@ -14,7 +13,6 @@
 	"goals.infra": "Hvor nødvendigt for opretholdelse af et sundt økosystem vil vi bygge og vedligeholde redskaber og infrastruktur - inklusive Continuous Integration og Binary Caching.",
 	"goals.education.title": "Læring",
 	"goals.education": "Igennem samlet dokumentation, tutorials, guides, og eksempler, vil vi sikre forbedret onboarding for nytilkommere samt hurtigere udviklingsprocess for eksperter.",
-
 	"roadmap.title": "Roadmap",
 	"roadmap.soft_fork.title": "Blød Fork",
 	"roadmap.soft_fork.1": "I opstartsfasen vil en mere ad-hoc ledelsesstruktur anvendes. Projektets målsætninger, værdier, og roadmap fungerer derfor som rettesnor for alle deltagere, samt garanti for at målstolperne for det arbejde de har meldt sig til ikke rykkes.",
@@ -34,7 +32,6 @@
 	"roadmap.alignment.title": "Justering",
 	"roadmap.alignment.1": "Vi er i mål. På dette tidspunkt i processen har vi en stabil, uafhængig fork af Nix økosystemet. Med opstartsfasen afsluttet, starter arbejdet med dokumentation af hvordan den nuværende ledelsesform fungerer og rotation påbegyndes med første valg til ledende stillinger.",
 	"roadmap.alignment.2": "En fuldt ud stabil udgivelse af dokumentation, branding, og pakker pudses af og lanceres. Fra nu af tilfalder ansvaret for oprettelse og styring af alle grupper styringsgruppen. Alle forslag til forbedringer bringes op under Aux Enhancement Proposals, hvilke anbefaler feature implementering til eksisterende SIGs eller oprettelse af nye til eksekvering af samme.",
-
 	"values.title": "Værdier",
 	"values.rep.title": "Repræsentation",
 	"values.rep": "Deltageres synspunkter bør repræsenteres og ledelsesstruktur skal etableres demokratiskt.",
