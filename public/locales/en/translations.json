@@ -1,4 +1,8 @@
 {
+	"version": 0,
+	"i18n-outdated.title": "Outdated Translation",
+	"i18n-outdated.description": "This translation has not been updated to the latest version yet.",
+
 	"root.description": "An alternative to the Nix ecosystem",
 
 	"header.community": "Community",

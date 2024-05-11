@@ -3,10 +3,24 @@ import Hero from "./Hero.astro";
 import Values from "./Values.astro";
 import Goals from "./Goals.astro";
 import Roadmap from "./Roadmap.astro";
+import I18nOutdated from "../i18n/Outdated.astro";
+
+import type { Params } from "../../i18n/utils";
+
+const { lang } = Astro.params as Params;
+import { isOutdated as i18nIsOutdated } from "../../i18n/utils";
 ---
 
 <main class="grid place-items-center">
 	<Hero />
+
+	{
+		i18nIsOutdated(lang) && (
+			<div class="prose prose-invert py-16 px-4 max-w-4xl">
+				<I18nOutdated />
+			</div>
+		)
+	}
 
 	<div class="prose prose-invert py-16 px-4 max-w-4xl">
 		<Values />
