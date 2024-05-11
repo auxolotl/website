@@ -40,7 +40,7 @@ Disallow: /
 User-agent: Claude-Web
 Disallow: /
 
-# Undocumented AI Agent
+# AI Data Scraper
 # https://darkvisitors.com/agents/claudebot
 
 User-agent: ClaudeBot
