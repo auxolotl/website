@@ -3,7 +3,7 @@
 	"header.community": "Gemeinschaft",
 	"goals.title": "Unsere Ziele",
 	"goals.independent.title": "Unabhängigkeit",
-	"goals.independent": "Wir werden eine Alternative zu NixPkgs und NixOS erstellen, die für das neue Ökosystem notwendigen Dienste, sowie eigenständige 'Continous Integration' und 'Binary Caching' Dienste bereitstellen. Zusätzliche Unterstützung für Projekte wie Nix Darwin und Home Manager wird in Betracht gezogen.",
+	"goals.independent": "Wir werden eine Alternative zu NixPkgs und NixOS erstellen, sowie die für das neue Ökosystem notwendigen Dienste bereitstellen, darunter eigenständige 'Continous Integration' und 'Binary Caching' Dienste. Zusätzliche Unterstützung für Projekte wie Nix Darwin und Home Manager wird in Betracht gezogen.",
 	"goals.gov.title": "Gesellschaftliche Organisation",
 	"goals.gov.wiki": "Mehr Details zu Auxs Organisation.",
 	"goals.gov": "Zur Verwaltung des Projekts wird ein demokratisches Modell mit gewählten Positionen eingesetzt. Ein Lenkungsausschuss ('steering committee') entscheidet über den Kurs, während weitere Ausschüsse spezifische oder logistische Aufgaben übernehmen. Features oder einzelne Projekte werden von 'Special Interest Groups' (SIG) umgesetzt. SIGs werden in Arbeitsgruppen ('Working Groups') zusammenarbeiten, um ihre Ziele übergreifend zu erreichen. Für jedes Komitee und jede Gruppe sind die Ziele, Anforderungen und Managementprozesse klar definiert.",
