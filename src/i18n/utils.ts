@@ -13,7 +13,10 @@ export function useTranslations(lang: keyof typeof ui) {
 
 export function isOutdated(lang: keyof typeof ui) {
 	if ("version" in ui[lang]) {
-		return ui[lang]["version"] < ui[defaultLang]["version"];
+		return (
+			(ui[lang] as (typeof ui)[typeof lang])["version"] <
+			ui[defaultLang]["version"]
+		);
 	} else {
 		return true;
 	}
