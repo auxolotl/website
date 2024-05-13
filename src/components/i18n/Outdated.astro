@@ -6,7 +6,11 @@ const { lang } = Astro.params as Params;
 const translation = useTranslations(lang);
 ---
 
-<section id="i18n-outdated">
+<section
+	id="i18n-outdated"
+	class="prose prose-invert w-full max-w-4xl bg-yellow-800 bg-opacity-50 border-l-4 border-orange-500 text-orange-100 p-4"
+	role="alert"
+>
 	<h2>{translation("i18n-outdated.title")}</h2>
 	<p class="description">
 		{translation("i18n-outdated.description")}

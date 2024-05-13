@@ -12,15 +12,9 @@ import { isOutdated as i18nIsOutdated } from "../../i18n/utils";
 ---
 
 <main class="grid place-items-center">
-	<Hero />
+	{i18nIsOutdated(lang) && <I18nOutdated />}
 
-	{
-		i18nIsOutdated(lang) && (
-			<div class="prose prose-invert py-16 px-4 max-w-4xl">
-				<I18nOutdated />
-			</div>
-		)
-	}
+	<Hero />
 
 	<div class="prose prose-invert py-16 px-4 max-w-4xl">
 		<Values />
