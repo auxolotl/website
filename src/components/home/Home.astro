@@ -8,9 +8,13 @@ import Roadmap from "./Roadmap.astro";
 <main class="grid place-items-center">
 	<Hero />
 
-	<div class="prose prose-invert py-16 px-4 max-w-4xl">
-		<Values />
-		<Goals />
-		<Roadmap />
+	<div
+		class="py-16 px-4 flex justify-center w-full bg-[rgb(var(--background))]"
+	>
+		<div class="prose prose-invert max-w-4xl w-full">
+			<Values />
+			<Goals />
+			<Roadmap />
+		</div>
 	</div>
 </main>
