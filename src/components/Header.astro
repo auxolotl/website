@@ -3,6 +3,7 @@ interface Props {}
 
 import { useTranslations } from "../i18n/utils";
 import type { Params } from "../i18n/utils";
+import { languages } from "../i18n/ui";
 import { Image } from "astro:assets";
 import aux from "../../public/aux.svg";
 
@@ -33,6 +34,27 @@ const translation = useTranslations(lang);
 				>
 			</li>
 			<li><a href="https://github.com/auxolotl">GitHub</a></li>
+
+			<select data-lang-selector class="bg-transparent">
+				{
+					Object.keys(languages).map((lang) => (
+						<option value={lang} class="text-black">
+							{languages[lang as keyof typeof languages]}
+						</option>
+					))
+				}
+			</select>
 		</ul>
 	</nav>
 </header>
+
+<script>
+	import { switchLang } from "../i18n/utils";
+	import type { languages } from "../i18n/ui";
+	const select: HTMLSelectElement | null = document.querySelector(
+		"[data-lang-selector]",
+	);
+	select?.addEventListener("change", () => {
+		switchLang(select.value as keyof typeof languages);
+	});
+</script>
