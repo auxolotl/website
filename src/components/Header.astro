@@ -4,35 +4,57 @@ interface Props {}
 import { useTranslations } from "../i18n/utils";
 import type { Params } from "../i18n/utils";
 import { Image } from "astro:assets";
-import aux from "../../public/aux.svg";
+import auxolotl from "../../public/auxolotl.svg";
 
 const { lang } = Astro.params as Params;
 const translation = useTranslations(lang);
 ---
 
 <header
-	class="sticky flex justify-between top-0 bg-[rgb(var(--background))] z-10 max-w-4xl mx-auto p-4 text-lg"
+	class="sticky flex justify-between top-0 bg-[rgb(var(--background-light))] z-10 p-4 text-lg rounded-bl-3xl rounded-br-3xl overflow-hidden"
 >
-	<div class="flex items-center">
-		<a href="https://auxolotl.org" class="flex items-center text-lg gap-4">
-			<Image class="w-12 h-12" src={aux} alt="auxolotl.org logo" />
-			<span>Auxolotl</span>
-		</a>
-	</div>
+	<div class="flex justify-between w-full max-w-4xl mx-auto pr-1">
+		<div class="flex items-center">
+			<a
+				href="https://auxolotl.org"
+				class="flex items-center text-lg gap-2"
+			>
+				<Image
+					class="w-12 h-12"
+					src={auxolotl}
+					alt="auxolotl.org logo"
+				/>
+			</a>
+		</div>
 
-	<nav>
-		<ul class="flex gap-4 items-center h-full">
-			<!--
+		<nav>
+			<ul class="flex gap-4 items-center h-full">
+				<!--
 			<li><a href="https://auxolotl.org/contribute">Contribute</a></li>
 		-->
 
-			<li><a href="https://wiki.auxolotl.org">Wiki</a></li>
-			<li>
-				<a href="https://forum.aux.computer"
-					>{translation("header.community")}</a
-				>
-			</li>
-			<li><a href="https://github.com/auxolotl">GitHub</a></li>
-		</ul>
-	</nav>
+				<li>
+					<a
+						href="https://wiki.auxolotl.org"
+						class="inline-block relative after:absolute after:left-0 after:top-full after:w-full after:h-1 after:rounded after:bg-[rgb(var(--text))] after:origin-center after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform delay-75 duration-100"
+						>Wiki</a
+					>
+				</li>
+				<li>
+					<a
+						href="https://forum.aux.computer"
+						class="inline-block relative after:absolute after:left-0 after:top-full after:w-full after:h-1 after:rounded after:bg-[rgb(var(--text))] after:origin-center after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform delay-75 duration-100"
+						>{translation("header.community")}</a
+					>
+				</li>
+				<li>
+					<a
+						href="https://github.com/auxolotl"
+						class="inline-block relative after:absolute after:left-0 after:top-full after:w-full after:h-1 after:rounded after:bg-[rgb(var(--text))] after:origin-center after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform delay-75 duration-100"
+						>GitHub</a
+					>
+				</li>
+			</ul>
+		</nav>
+	</div>
 </header>

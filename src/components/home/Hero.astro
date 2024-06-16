@@ -1,20 +1,21 @@
 ---
 import { useTranslations } from "../../i18n/utils";
 import { Image } from "astro:assets";
-import aux from "../../../public/aux.svg";
+import auxText from "../../../public/aux-text.svg";
 import type { Params } from "../../i18n/utils";
 
 const { lang } = Astro.params as Params;
 const translation = useTranslations(lang);
 ---
 
-<div class="hero">
-	<div class="content">
-		<div class="icon">
-			<Image src={aux} alt="auxolotl.org logo" />
+<div class="w-full bg-[rgb(var(--background))]">
+	<div class="hero rounded-bl-3xl rounded-br-3xl">
+		<div class="content">
+			<div class="icon">
+				<Image src={auxText} alt="aux" />
+			</div>
+			<div class="description">{translation("root.description")}</div>
 		</div>
-		<h1 class="title">auxolotl.org</h1>
-		<div class="description">{translation("root.description")}</div>
 	</div>
 </div>
 
@@ -22,8 +23,11 @@ const translation = useTranslations(lang);
 	.hero {
 		display: flex;
 		justify-content: center;
-		max-width: 600px;
+		width: 100%;
 		margin: 0 auto;
+		background: rgb(var(--background-light));
+		padding-top: 1rem;
+		padding-bottom: 1rem;
 	}
 
 	.content {
@@ -38,23 +42,10 @@ const translation = useTranslations(lang);
 		position: relative;
 	}
 
-	.content .icon::before {
-		content: "";
-		display: block;
-		position: absolute;
-		width: 100%;
-		height: 60%;
-		background: rgb(var(--accent));
-		border-radius: 50%;
-		bottom: 0;
-		left: 0;
-		transform: rotateZ(-5deg) skewX(-8deg) skewY(-8deg);
-		z-index: -1;
-	}
-
 	.content .icon img {
-		width: 250px;
-		height: 250px;
+		width: 100%;
+		height: auto;
+		max-width: 450px;
 	}
 
 	.content .title {
@@ -65,6 +56,7 @@ const translation = useTranslations(lang);
 
 	.content .description {
 		text-align: center;
-		font-size: 1rem;
+		font-size: 1.25rem;
+		text-wrap: balance;
 	}
 </style>
