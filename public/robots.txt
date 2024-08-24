@@ -118,6 +118,12 @@ Disallow: /
 User-agent: Timpibot
 Disallow: /
 
+# AI Data Scraper
+# https://darkvisitors.com/agents/webzio-extended
+
+User-agent: Webzio-Extended
+Disallow: /
+
 # AI Search Crawler
 # https://darkvisitors.com/agents/youbot
 
