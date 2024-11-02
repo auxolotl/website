@@ -1,0 +1,16 @@
+---
+import { useTranslations } from "../../i18n/utils";
+import type { Params } from "../../i18n/utils";
+
+const { lang } = Astro.params as Params;
+const translation = useTranslations(lang);
+---
+
+<section
+	id="i18n-outdated"
+	class="w-full max-w-4xl bg-yellow-800 bg-opacity-50 border-l-4 border-orange-500 text-orange-100 p-4"
+	role="alert"
+>
+	<p class="font-bold">{translation("i18n-outdated.title")}</p>
+	<p>{translation("i18n-outdated.description")}</p>
+</section>
