@@ -124,6 +124,12 @@ Disallow: /
 User-agent: omgili
 Disallow: /
 
+# AI Data Scraper
+# https://darkvisitors.com/agents/pangubot
+
+User-agent: PanguBot
+Disallow: /
+
 # AI Search Crawler
 # https://darkvisitors.com/agents/perplexitybot
 
