@@ -65,6 +65,12 @@ User-agent: cohere-ai
 Disallow: /
 
 # AI Data Scraper
+# https://darkvisitors.com/agents/cohere-training-data-crawler
+
+User-agent: cohere-training-data-crawler
+Disallow: /
+
+# AI Data Scraper
 # https://darkvisitors.com/agents/diffbot
 
 User-agent: Diffbot
