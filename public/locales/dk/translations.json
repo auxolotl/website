@@ -1,4 +1,5 @@
 {
+	"version": 0,
 	"root.description": "Et alternativ til Nix økosystemet",
 	"header.community": "Community",
 	"goals.title": "Mål",
